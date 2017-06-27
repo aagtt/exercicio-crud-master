@@ -1,0 +1,25 @@
+<p-accordion>
+    <p-accordionTab header="Alunos" [selected]="true">
+        <p-dataList [value]="listaAlunos">
+            <ng-template let-aluno pTemplate="item">
+                {{aluno.nome}}
+            </ng-template>
+        </p-dataList>
+    </p-accordionTab>
+
+    <p-accordionTab header="Cursos" [selected]="true">
+        <p-dataList [value]="listaCursos">
+            <ng-template let-curso pTemplate="item">
+                {{curso.nome}}
+            </ng-template>
+        </p-dataList>
+    </p-accordionTab>
+
+    <p-accordionTab header="Disciplinas" [selected]="true">
+        <p-dataList [value]="listaDisciplinas">
+            <ng-template let-disciplina pTemplate="item">
+                {{disciplina.nome}}
+            </ng-template>
+        </p-dataList>
+    </p-accordionTab>    
+</p-accordion>
